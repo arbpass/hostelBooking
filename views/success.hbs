@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="booking.css" />
+    <title>Poornima University</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container my-5" style="color: white;">
+
+        <div class="card text-center" style="background-color: rgb(42, 46, 46);">
+            <div class="card-header text-success">
+                Payment Successful!
+            </div>
+            <div class="card-body my-2">
+                <div class="mb-3">
+                    <label class="form-label">Registration Number</label>
+                    <input name="regno" type="input" readonly class="form-control"
+                        style="background-color: rgb(42, 46, 46); color: white;" value="{{regno}}">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hostel</label>
+                    <input name="hostel" type="input" readonly class="form-control"
+                        style="background-color: rgb(42, 46, 46); color: white;" value="{{hostel}}">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Room Number</label>
+                    <input name="roomNo" type="input" readonly class="form-control"
+                        style="background-color: rgb(42, 46, 46); color: white;" value="{{roomNo}}">
+                </div>
+                <button type="button" class="btn btn-success" disabled>Paid</button>
+            </div>
+            <div class="card-footer text-muted">
+                Poornima University
+            </div>
+        </div>
+
+        <div class="alert alert-success  text-center" role="alert">
+            You can go back to the <a href="/" class="alert-link">HOME PAGE</a>. Give it a click if you like.
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
